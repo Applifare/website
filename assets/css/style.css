@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ariel", sans-serif;
   color: #444444;
 }
 
@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Ariel", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -51,7 +51,7 @@ section {
 }
 
 .section-header h2 {
-  font-size: 13px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
@@ -61,17 +61,17 @@ section {
 
 .section-header p {
   margin: 10px 0 0 0;
-  padding: 0;
-  font-size: 38px;
-  line-height: 42px;
-  font-weight: 700;
+  padding: 0px 52px;
+  /* font-size: 38px; */
+  /* line-height: 42px; */
+  /* font-weight: 700; */
   color: #012970;
 }
 
 @media (max-width: 768px) {
   .section-header p {
-    font-size: 28px;
-    line-height: 32px;
+    /* font-size: 28px; */
+    /* line-height: 32px; */
   }
 }
 
@@ -197,7 +197,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #012970;
-  font-family: "Nunito", sans-serif;
+  font-family: "Ariel", sans-serif;
   margin-top: 3px;
 }
 
@@ -229,7 +229,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Ariel", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #013289;
@@ -487,7 +487,8 @@ section {
 .hero h2 {
   color: #444444;
   margin: 15px 0 0 0;
-  font-size: 26px;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .hero .btn-get-started {
@@ -502,7 +503,7 @@ section {
 }
 
 .hero .btn-get-started span {
-  font-family: "Nunito", sans-serif;
+  font-family: "Ariel", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -602,7 +603,7 @@ section {
 }
 
 .about .btn-read-more span {
-  font-family: "Nunito", sans-serif;
+  font-family: "Ariel", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -683,7 +684,7 @@ section {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Ariel", sans-serif;
   font-size: 14px;
 }
 
@@ -770,10 +771,10 @@ section {
   margin-right: 8px;
   color: #4154f1;
 }
-
+/* 
 .features .feature-icons {
   margin-top: 120px;
-}
+} */
 
 .features .feature-icons h3 {
   color: #012970;
@@ -781,6 +782,7 @@ section {
   font-size: 32px;
   margin-bottom: 20px;
   text-align: center;
+  margin-bottom: 54px;
 }
 
 @media (max-width: 768px) {
@@ -868,9 +870,9 @@ section {
   color: #2db6fa;
 }
 
-.services .service-box.blue:hover {
+/* .services .service-box.blue:hover {
   background: #2db6fa;
-}
+} */
 
 .services .service-box.orange {
   border-bottom: 3px solid #f68c09;
@@ -884,10 +886,10 @@ section {
 .services .service-box.orange .read-more {
   color: #f68c09;
 }
-
+/* 
 .services .service-box.orange:hover {
   background: #f68c09;
-}
+} */
 
 .services .service-box.green {
   border-bottom: 3px solid #08da4e;
@@ -901,10 +903,10 @@ section {
 .services .service-box.green .read-more {
   color: #08da4e;
 }
-
+/* 
 .services .service-box.green:hover {
   background: #08da4e;
-}
+} */
 
 .services .service-box.red {
   border-bottom: 3px solid #e9222c;
@@ -918,10 +920,10 @@ section {
 .services .service-box.red .read-more {
   color: #e9222c;
 }
-
+/* 
 .services .service-box.red:hover {
   background: #e9222c;
-}
+} */
 
 .services .service-box.purple {
   border-bottom: 3px solid #b50edf;
@@ -935,10 +937,10 @@ section {
 .services .service-box.purple .read-more {
   color: #b50edf;
 }
-
+/* 
 .services .service-box.purple:hover {
   background: #b50edf;
-}
+} */
 
 .services .service-box.pink {
   border-bottom: 3px solid #f51f9c;
@@ -952,11 +954,11 @@ section {
 .services .service-box.pink .read-more {
   color: #f51f9c;
 }
-
+/* 
 .services .service-box.pink:hover {
   background: #f51f9c;
-}
-
+} */
+/* 
 .services .service-box:hover h3,
 .services .service-box:hover p,
 .services .service-box:hover .read-more {
@@ -965,7 +967,7 @@ section {
 
 .services .service-box:hover .icon {
   background: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Pricing
@@ -996,7 +998,7 @@ section {
   font-size: 36px;
   color: #444444;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ariel", sans-serif;
 }
 
 .pricing .price sup {
@@ -1042,7 +1044,7 @@ section {
   transition: none;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Nunito", sans-serif;
+  font-family: "Ariel", sans-serif;
   font-weight: 600;
   transition: 0.3s;
   border: 1px solid #4154f1;
@@ -2335,7 +2337,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #012970;
-  font-family: "Nunito", sans-serif;
+  font-family: "Ariel", sans-serif;
   margin-top: 3px;
 }
 
@@ -2343,7 +2345,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Ariel", sans-serif;
 }
 
 .footer .footer-top .social-links a {
