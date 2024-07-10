@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{page.title}}</title>
+    {% include head_meta.html %}
+  </head>
+
+  <body>
+    {% include header.html %}
+
+    <main id="main">
+      <!-- ======= Breadcrumbs ======= -->
+      <section class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="{{site.baseurl}}/index.html">Home</a></li>
+            <li>Blogs</li>
+          </ol>
+          <h2>{{page.title}}</h2>
+        </div>
+      </section>
+      <!-- End Breadcrumbs -->
+
+      <!-- ======= Blog Section ======= -->
+      <section id="blog" class="blog">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-8 entries">
+              {% for post in paginator.posts %}
+
+              <article class="entry">
+                <div class="entry-img">
+                  <img
+                    src="{{site.baseurl}}/{{ post.image }}"
+                    alt="{{ post.title }}"
+                    class="img-fluid"
+                  />
+                </div>
+
+                <h2 class="entry-title">
+                  <a href="{{ post.url }}">{{post.title}}</a>
+                </h2>
+
+                <div class="entry-meta">
+                  <ul>
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-person"></i>
+                      <span>{{post.author}}</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-clock"></i>
+                      <time datetime="{{post.date}}"
+                        >{{post.date | date: "%B %d, %Y"}}</time
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="entry-content">
+                  <p>{{post.summary}}</p>
+                  <div class="read-more">
+                    <a href="{{post.url}}">Read More</a>
+                  </div>
+                </div>
+              </article>
+              {% endfor %}
+
+              <!-- End blog entry -->
+
+              <div class="blog-pagination">
+                {% if paginator.total_pages > 1 %}
+                <ul class="justify-content-center">
+                  {% if paginator.previous_page %}
+                  <li>
+                    <a
+                      href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
+                      >Newer</a
+                    >
+                  </li>
+                  {% endif %} {% if paginator.next_page %}
+                  <li>
+                    <a
+                      href="{{ paginator.next_page_path | prepend: site.baseurl }}"
+                      >Older</a
+                    >
+                  </li>
+                  {% endif %}
+                </ul>
+                {% endif %}
+              </div>
+            </div>
+            <!-- End blog entries list -->
+
+            <div class="col-lg-4">
+              <div class="sidebar">
+                <!--
+                <h3 class="sidebar-title">Search</h3>
+                <div class="sidebar-item search-form">
+                  <form action="">
+                    <input type="text" />
+                    <button type="submit"><i class="bi bi-search"></i></button>
+                  </form>
+                </div>
+-->
+                <!-- End sidebar search formn-->
+
+                <h3 class="sidebar-title">Categories</h3>
+                <div class="sidebar-item categories">
+                  <ul>
+                    {% for category in site.categories %}
+                    <li>
+                      <a href="{{site.baseurl}}/category/{{category | first}}"
+                        >{{category | first}}
+                        <span>({{category.last | size}})</span></a
+                      >
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                <!-- End sidebar categories-->
+
+                <h3 class="sidebar-title">Recent Posts</h3>
+                <div class="sidebar-item recent-posts">
+                  {% for post in site.posts limit:4 %}
+                  <div class="post-item clearfix">
+                    <img
+                      src="{{site.baseurl}}/{{ post.image }}"
+                      alt="{{ post.title }}"
+                    />
+                    <h4>
+                      <a href="{{post.url}}">{{post.title}}</a>
+                    </h4>
+                    <time datetime="{{post.date}}"
+                      >{{post.date | date: "%B %d, %Y"}}</time
+                    >
+                  </div>
+                  {% endfor %}
+                </div>
+                <!-- End sidebar recent posts-->
+
+                <h3 class="sidebar-title">Tags</h3>
+                <div class="sidebar-item tags">
+                  <ul>
+                    {% for tag in site.tags %}
+                    <li>
+                      <a href="{{site.baseurl}}/tag/{{tag | first}}"
+                        >{{tag | first}}</a
+                      >
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                <!-- End sidebar tags-->
+              </div>
+              <!-- End sidebar -->
+            </div>
+            <!-- End blog sidebar -->
+          </div>
+        </div>
+      </section>
+      <!-- End Blog Section -->
+    </main>
+    <!-- End #main -->
+
+    {% include footer.html%}
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    {% include scripts.html %}
+  </body>
+</html>
