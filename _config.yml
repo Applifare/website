@@ -30,7 +30,7 @@ baseurl: "/test-website" # the base hostname & protocol for your site, e.g. http
 twitter_username: jekyllrb
 github_username: jekyll
 
-permalink: blog/:title:output_ext
+#permalink: blog/:title:output_ext
 
 # Build settings
 theme: minima
