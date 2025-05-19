@@ -43,7 +43,7 @@ We’re always looking for passionate, talented individuals to join our team. Be
 We’ve designed a simple, transparent hiring process to make your experience smooth and straightforward. Here’s what you can expect:
 
 1. **Application Submission**
-   Submit your resume and cover letter via our online application form.
+   Submit your resume resume, portfolio/GitHub link, and a brief cover letter explaining why you’re the perfect fit for this role to [hiring@applifare.com][hiring] with the subject line: "Application for Software Engineer (Intern)". Also, follow our LinkedIn page for regular updates about our new roles and vacancies.
 2. **Initial Screening**
    Our HR team will review your application and reach out to qualified candidates for an introductory call.
 3. **Interview**
@@ -55,6 +55,7 @@ We’ve designed a simple, transparent hiring process to make your experience sm
 
 If you’re looking for a career that challenges you, encourages growth, and offers the chance to work on cutting-edge projects, Applifare Technologies is the place for you.
 
-Apply Now or [Contact Us][contact-us] for more information.
+[Apply Now][hiring] or [Contact Us][contact-us] for more information.
 
 [contact-us]: mailto:help@applifare.com
+[hiring]: mailto:hiring@applifare.com
