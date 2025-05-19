@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{page.title}}</title>
+    {% include head_meta.html %}
+  </head>
+
+  <body>
+    {% include header.html %}
+
+    <main id="main">
+      <!-- ======= Breadcrumbs ======= -->
+      <section class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="{{site.baseurl}}">Home</a></li>
+            <li>{{page.title}}</li>
+          </ol>
+          <h2>{{page.title}}</h2>
+        </div>
+      </section>
+      <!-- End Breadcrumbs -->
+      <!-- End Breadcrumbs -->
+
+      <!-- ======= Blog Section ======= -->
+      <section id="general" class="blog">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="entries">
+              <article class="entry entry-single">
+                {% if page.mainHeading %}
+                <h2 class="entry-title">{{page.mainHeading}}</h2>
+                {% endif %} {% if page.mainSummary %}
+                <div class="entry-content">{{page.mainSummary}}</div>
+                {% endif %}
+                <div class="entry-content">
+                  {% if page.displayBlogs %}
+                  <h3>Blog and Articles</h3>
+                  Explore expert-written content on:
+                  <ul>
+                    {% for post in site.posts limit:4 %}
+                    <li>
+                      <a href="{{site.baseurl}}/{{post.url}}">{{post.title}}</a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+
+                  <strong
+                    ><a href="{{site.baseurl}}/blog"
+                      >Read All Blog Posts</a
+                    ></strong
+                  >
+                  {% endif %}
+                </div>
+                <div class="entry-content">{{ content }}</div>
+              </article>
+              <!-- End blog entry -->
+            </div>
+            <!-- End blog entries list -->
+          </div>
+        </div>
+      </section>
+      <!-- End Blog Section -->
+    </main>
+    <!-- End #main -->
+
+    {% include footer.html%}
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    {% include scripts.html %}
+  </body>
+</html>
