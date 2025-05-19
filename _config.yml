@@ -25,11 +25,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 domain: applifare.github.io
-url: "https://applifare.github.io" # the subpath of your site, e.g. /blog
+url: "https://applifare.com" # the subpath of your site, e.g. /blog
 baseurl: "/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: jekyll
-formsubmit_slug: "4e2c75415841513b772861ab9d998d6a"
+formsubmit_slug: "help@applifare.com"
 
 permalink: /blog/:title:output_ext
 
