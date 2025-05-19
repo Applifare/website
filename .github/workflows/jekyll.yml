@@ -34,14 +34,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Ruby
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y software-properties-common
-          sudo apt-add-repository -y ppa:brightbox/ruby-ng
-          sudo apt-get update
-          sudo apt-get install -y ruby3.3
-
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1 # v1.161.0
         with:
